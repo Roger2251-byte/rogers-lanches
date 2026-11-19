@@ -6,7 +6,7 @@ export default function handler(req, res) {
     });
   }
 
-  const senha = process.env.ADMIN_PASSWORD;
+  const senha = process.env.SENHA_ADMINISTRADOR;
 
   if (!senha) {
     return res.status(500).json({
